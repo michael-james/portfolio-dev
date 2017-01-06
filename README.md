@@ -1,0 +1,21 @@
+# Assignment 6 - Polishing a Web Portfolio Project
+# by Michael James
+
+# Viewing the Project
+– The prototype is currently optimized for Google Chrome. Pla with it at all screen sizes!
+
+# Overview
+– I made an interactive version of a physics-based prototype and found two main issues with it. Users had trouble understanding the relationship between the filters and the bubbles. The bubbles also made the order in which my portfolio was viewed a free for all, because there was little inherent sequence other than the relative size. I got advice that a portfolio is editorial in a similar was as a magazine and that I should only include projects that I really love. It was clear to me at this point that I should make a portfolio that allowed me to tell a curated story rather than toss a bunch of things at the user.
+– I decided to create a more conventional portfolio while working to make the small things about it each crafted with love and maybe even a little unexpected. I found thoughtful animation and interaction allowed me to thoughtfully create a dynamic experience with a bit of drama.
+– Because I intend to use this project as a my portfolio when I apply for jobs in the spring, I spent a great deal of time and effort working out small details to put a high level of polish on the project. The main areas I really worked to polish where making the site fully responsive, the interaction and animation of the links in "my story", animation of the portfolio items, and the correct sizing and positioning of each portfolio item picture.
+	– I frequently found myself resizing my browser to always make sure everything I was doing worked across multiple breakpoints.
+	– In styling the links for "my story", I pulled together design patterns I enjoyed elsewhere to create a delightful experience. By making the links appear on hover, I only make them visible when necessary. The links subtley fade darker when you hover and a purple background sweeps across, almost as if buildling up the user's excitement to click.
+	– One of the biggest challenges of the project was getting the hover action to work as I envisioned on the portfolio items. I originally pieced together different elements but I could never get all of them to work at once, just the way I wanted. In particular, I couldn't get the images to cover the container correctly and scale on hover. I ended up writing my own javascript to make the hover action work and correctly position the images inside their divs at any window size. However, I found that when the window was about tablet size, the divs were very wide and the portion of the image displayed was often unpleasent. So I built out a system in which I could add data about position offset in the HTML that would modify the image's location, with two settings for normal and super wide aspect ratios.
+– My underlying goal was to make everything work so well that people wouldn't notice how much was actually going on behind the scenes.
+– Feedback I got from user testing was that my profile picture should be centered when in mobile view (it was not previously) and that it was not immediately clear that the modals were scrollable. Although the modals were not necessarily a part of the project, but just there to demonstrate the the portfolio links work, I did try to improve this by putting the images in the modal in a div of limited  height so that users could more easily see the text regardless of the image's aspect ratio.
+– I played around a lot with whether the navbar should be transparent or opaque and ultimately decided that the transparency made it more unique and reflected my interest in light and color interactions. As I move forward with the portfolio, I will continue to test how this influences usability.
+
+# Technologies Used
+– I used wow.js and its dependency animate.css to make elements fade in when they're scrolled to.
+– I used cbpAnimatedHeader.js to determine when a point in the document had scrolled into or out of view to trigger something else (in this case hiding/showing the header).
+– I used bootstrap and in particular the scrollspy js function to update the active nav item on scroll.
