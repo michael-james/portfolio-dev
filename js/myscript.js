@@ -1,3 +1,7 @@
+// $( window ).resize(function() {
+//   $("#headersvg").attr("height", "10px");
+// });
+
 $(document).ready(function(){
   // ################################################
   // Add smooth scrolling to all links

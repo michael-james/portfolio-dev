@@ -73,21 +73,22 @@
 
     <!-- landing with my name -->
     <header id="intro" class="bk-box">
-      <div class="matte-pink screen intro-text center">
+      <div class="blendintro headersize"">
+        <svg id="headersvg" width='100%' height='100%' viewBox="0 0 100 100" preserveAspectRatio="none"> <!-- style='background-color: whitesmoke' -->
+          <polygon width="100%" points="0,0 100,0 30,25 0,55" class="svgcolor"/>
+          <polygon width="100%" points="100,100 0,100 75,70 100,45" class="svgcolor"/>
+          <!-- <polygon points="750,750 750,0 0,0" style="fill:blue; mix-blend-mode: screen;"/> -->
+        </svg>
+      </div>
+      <div class="blendintro intro-text center">
         <span id="my-name"  class="accent wow fadeIn" data-wow-delay=".2s" href="#about">michael james</span>
         <div id="intro-thresh">
           <div id="desc1" class="my-desc wow fadeIn" data-wow-delay=".8s" data-wow-duration="1.2s">interaction designer + theatre artist</div>
           <!-- <div class="my-desc wow fadeIn" data-wow-delay="1.4s" data-wow-duration="1.2s">I design moments on screens and in spaces.</div> -->
         </div>
       </div>
-      <div id="scroll-dwn" class="screen">
+      <div id="scroll-dwn" class="blendintro">
         <a href="#about"><span id="arrow-down" class="glyphicon glyphicon-arrow-down wow fadeIn" data-wow-delay="1.4s" aria-hidden="true"></span></a>
-      </div>
-      <div class="screen" style="width:100%; height:100%;">
-        <svg width='100%' height='100%' viewBox="0 0 750 750" preserveAspectRatio="none"> <!-- style='background-color: whitesmoke' -->
-          <polygon width="100%" points="0,0 750,0 0,750" style="fill:purple; mix-blend-mode: screen;"/>
-          <polygon points="750,750 750,0 0,0" style="fill:blue; mix-blend-mode: screen;"/>
-        </svg>
       </div>
     </header>
 
@@ -114,23 +115,22 @@
     <section id="work" class="bk-blue bk-box">
       <div class="container">
         <div class="work-cont row">
-          <div class="col-md-12 head center wow fadeIn screen" data-wow-delay=".4s">
+          <div class="col-md-12 head center wow fadeIn blendintro" data-wow-delay=".4s">
               <div class="head-pad matte-pink">work</div>
           </div>
         </div>
 
         <!-- porfolio: interaction design -->
-        <div id="interaction" class="work wow fadeIn" data-wow-delay=".4s">
           <div class="work-cont row">
             <div class="work-item col-md-6">
               <a data-toggle="modal" data-target="#modal" data-whatever="Echo">
                 <div class="work-item-pad">
                 <img src="assets/thumb/simon.jpg" data-wy="70" data-ny=""></img>
                 <div class="work-item-overlay">
-                  <div class="work-item-label">
+                  <!-- <div class="work-item-label">
                     Echo
                     <p>educational service</p>
-                  </div>
+                  </div> -->
                 </div>
                 </div>
               </a>
@@ -141,29 +141,43 @@
                 <div class="work-item-pad">
                   <img src="assets/thumb/solemates.png" data-wy="65"></img>
                   <div class="work-item-overlay">
-                    <div class="work-item-label">
+                    <!-- <div class="work-item-label">
                       Solemates
                       <p>intelligent environment</p>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
               </a>
             </div>
           </div>
-        </div>
+
+          <div class="work-cont row">
+            <div class="col-md-6 desc wow fadeIn blendintro">
+              <div class="desc-pad matte-pink">
+                Echo
+                <p>educational service</p>
+              </div>
+            </div>
+
+            <div class="col-md-6 desc wow fadeIn blendintro">
+              <div class="desc-pad matte-pink">
+                Solemates
+                <p>intelligent environment</p>
+              </div>
+            </div>
+          </div>
 
         <!-- porfolio: theatrical design -->
-        <div id="theatre" class="work wow fadeIn" data-wow-delay=".4s">
           <div class="work-cont row">
             <div class="work-item col-md-6">
               <a data-toggle="modal" data-target="#modal" data-whatever="Smaug's Table">
                 <div class="work-item-pad">
                   <img src="assets/thumb/smaug.jpg" data-wy="70"></img>
                   <div class="work-item-overlay">
-                    <div class="work-item-label">
+                    <!-- <div class="work-item-label">
                       Smaug's Table
                       <p>themed restaurant</p>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
               </a>
@@ -174,13 +188,29 @@
                 <div class="work-item-pad">
                   <img src="assets/thumb/milk.jpg" data-wy="20"></img>
                   <div class="work-item-overlay">
-                    <div class="work-item-label">
+                    <!-- <div class="work-item-label">
                       <i>Milk Like Sugar</i>
                       <p>media design</p>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
               </a>
+            </div>
+
+            <div class="work-cont row">
+              <div class="col-md-6 desc wow fadeIn blendintro">
+                <div class="desc-pad matte-pink">
+                  Smaug's Table
+                  <p>themed restaurant</p>
+                </div>
+              </div>
+
+              <div class="col-md-6 desc wow fadeIn blendintro">
+                <div class="desc-pad matte-pink">
+                  <i>Milk Like Sugar</i>
+                  <p>media design</p>
+                </div>
+              </div>
             </div>
 
             <!-- <div class="work-item col-md-3">
@@ -222,7 +252,6 @@
                 </div>
               </a>
             </div> -->
-          </div>
         </div>
 
         <!-- porfolio: visual stories -->
