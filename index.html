@@ -73,24 +73,51 @@
 
     <!-- landing with my name -->
     <header id="intro" class="bk-box">
-      <div class="intro-text center">
+      <div class="matte-pink screen intro-text center">
         <span id="my-name"  class="accent wow fadeIn" data-wow-delay=".2s" href="#about">michael james</span>
         <div id="intro-thresh">
           <div id="desc1" class="my-desc wow fadeIn" data-wow-delay=".8s" data-wow-duration="1.2s">interaction designer + theatre artist</div>
           <!-- <div class="my-desc wow fadeIn" data-wow-delay="1.4s" data-wow-duration="1.2s">I design moments on screens and in spaces.</div> -->
         </div>
       </div>
-      <div id="scroll-dwn">
-        <a href="#about"><span id="arrow-down" class="glyphicon glyphicon-arrow-down wow fadeIn" data-wow-delay="2.6s" aria-hidden="true"></span></a>
+      <div id="scroll-dwn" class="screen">
+        <a href="#about"><span id="arrow-down" class="glyphicon glyphicon-arrow-down wow fadeIn" data-wow-delay="1.4s" aria-hidden="true"></span></a>
+      </div>
+      <div class="screen" style="width:100%; height:100%;">
+        <svg width='100%' height='100%' viewBox="0 0 750 750" preserveAspectRatio="none"> <!-- style='background-color: whitesmoke' -->
+          <polygon width="100%" points="0,0 750,0 0,750" style="fill:purple; mix-blend-mode: screen;"/>
+          <polygon points="750,750 750,0 0,0" style="fill:blue; mix-blend-mode: screen;"/>
+        </svg>
       </div>
     </header>
 
-    <!-- portfolio work -->
-    <section id="work" class="bk-p bk-paper">
-      <div class="container">
-        <h1 class="center wow fadeIn" data-wow-delay=".4s">
-          work
+    <!-- my story -->
+    <section id="about">
+      <div id="story" class="container wow fadeIn" data-wow-delay=".4s">
+        <h1 class="center">
+          my story
         </h1>
+
+        <div id="portrait-cont"><img id="portrait" src="assets/me.jpg"></img></div>
+        <div id="story-text">
+          <p>
+            My work engages play, empathy, and analytics to devise solutions to wicked problems. I spend time with people, tools, and ideas until I know their truth. I use these discoveries to create human-centered services and environments, with an eye towards emerging technologies such as machine learning, VR &amp; AR, and ambient displays. My theatre arts and interaction design practices inform each other on a <a class="fancy" href="#crossover">daily basis</a>.
+          </p>
+          <p>
+            I graduate from Carnegie Mellon University in May, where I'm studying <a class="fancy" href="http://drama.cmu.edu/programs/undergraduate/video-media-design/" target="_blank">Video &amp; Media Design for Drama</a>  and <a class="fancy" href="https://www.hcii.cmu.edu/" target="_blank">Human-Computer Interaction</a>. I've done <a class="fancy">research</a> in homelessness, data visualization, and mental health. I've designed and devised performance work with students at the <a class="fancy" href="https://www.rcs.ac.uk/courses/ba-acting/">Royal Conservatoire of Scotland</a> and presented at the <a class="fancy" href="http://www.pq.cz/en/">Prague Quadrennial</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio work -->
+    <section id="work" class="bk-blue bk-box">
+      <div class="container">
+        <div class="work-cont row">
+          <div class="col-md-12 head center wow fadeIn screen" data-wow-delay=".4s">
+              <div class="head-pad matte-pink">work</div>
+          </div>
+        </div>
 
         <!-- porfolio: interaction design -->
         <div id="interaction" class="work wow fadeIn" data-wow-delay=".4s">
@@ -287,31 +314,6 @@
           </div>
         </div> -->
 
-      </div>
-    </section>
-
-    <!-- my story -->
-    <section id="about">
-      <div id="story" class="container wow fadeIn" data-wow-delay=".4s">
-        <h1 class="center">
-          my story
-        </h1>
-
-        <div id="portrait-cont"><img id="portrait" src="assets/me.jpg"></img></div>
-        <div id="story-text">
-          <p>
-            My work engages play, empathy, and analytics to devise solutions to wicked problems. I spend time with people, tools, and ideas until I know their truth. I use these discoveries to create human-centered services and environments, with an eye towards emerging technologies such as machine learning, VR &amp; AR, and ambient displays. My theatre arts and interaction design practices inform each other on a <a class="fancy" href="#crossover">daily basis</a>.
-          </p>
-          <p>
-            At <a class="fancy" href="http://cmu.edu" target="_blank">Carnegie Mellon University</a>, I study <a class="fancy" href="http://drama.cmu.edu/programs/undergraduate/video-media-design/" target="_blank">Video &amp; Media Design</a> in the School of Drama and <a class="fancy" href="https://www.hcii.cmu.edu/" target="_blank">Human-Computer Interaction</a> in the School of Computer Science. I've done research with <a class="fancy" href="http://www.cs.cmu.edu/~mklee/" target="_blank">Min Kyung Lee</a> on services for the homeless and <a class="fancy" href="http://kittur.org/" target="_blank">Niki Kittur</a> &amp; <a class="fancy" href="http://jeffrz.com/" target="_blank">Jeff Rzeszotarski</a> on the touch-based data visualization tool <a class="fancy" href="http://datasquid.co/" target="_blank">Data Squid</a>.
-          </p>
-          <p>
-            I work as a UX Design Intern at <a class="fancy" href="https://www.procore.com/" target="_blank">Procore Technologies</a>, redesigning aspects of implementation and onboarding for new accounts. I established the information architecture for a new main nav and lay the groundwork for an Amazon Echo integration.
-          </p>
-          <p>
-            I was the Media Designer for the CMU production of <i>Milk Like Sugar</i>. I'm the Associate Director for Design &amp; Curation at <a class="fancy" href="http://roundroomimage.org/live" target="_blank">Round Room Image</a>, where I designed and devised <i>Surrounded</i> and <i>Surrounded 2.0</i> (the latter was devised with students from the <a class="fancy" href="https://www.rcs.ac.uk/courses/ba-acting/">Royal Conservatoire of Scotland</a> and presented at the <a class="fancy" href="http://www.pq.cz/en/">Prague Quadrennial</a>).
-          </p>
-        </div>
       </div>
     </section>
 
