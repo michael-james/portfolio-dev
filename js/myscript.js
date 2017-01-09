@@ -223,10 +223,8 @@ var cbpAnimatedHeader = (function() {
       header.classList.remove('navbar-hidden');
     }
     else {
-      header.classList.add('navbar-hidden');
-      navCollapse.classList.remove('in');
-      // navCollapse.classList.add('collapsing');
-      // navCollapseBtn.classList.remove('collapsed');
+      // header.classList.add('navbar-hidden'); //just for now
+      // navCollapse.classList.remove('in'); //just for now
     }
     didScroll = false;
   }

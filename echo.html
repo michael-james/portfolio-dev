@@ -34,7 +34,7 @@
   <body data-spy="scroll" data-target=".navbar" data-offset="51">
 
     <!-- navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top navbar-hidden">
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -83,24 +83,21 @@
     </nav>
 
     <!-- landing with my name -->
-    <section id="subpage-header" class="bk-box">
-      <div class="blendintro headersize"">
-        <svg id="headersvg" width='100%' height='100%' viewBox="0 0 100 100" preserveAspectRatio="none"> <!-- style='background-color: whitesmoke' -->
-          <polygon width="100%" points="0,0 100,0 30,25 0,55" class="svgcolor"/>
-          <polygon width="100%" points="100,100 0,100 75,70 100,45" class="svgcolor"/>
+    <section id="subpage-header" class="Subpage header bk-box">
+      <!-- <div class="blendintro headersize"> -->
+        <!-- <svg id="headersvg" width='100%' height='100%' viewBox="0 0 100 100" preserveAspectRatio="none">-->
+          <!-- <polygon width="100%" points="0,0 100,0 30,25 0,55" class="svgcolor"/> -->
+          <!-- <polygon width="100%" points="100,100 0,100 75,70 100,45" class="svgcolor"/> -->
           <!-- <polygon points="750,750 750,0 0,0" style="fill:blue; mix-blend-mode: screen;"/> -->
-        </svg>
-      </div>
+        <!-- </svg> -->
+      <!-- </div> -->
       <div class="blendintro intro-text center">
-        <span id="my-name"  class="accent wow fadeIn" data-wow-delay=".2s" href="#about">michael james</span>
-        <div id="intro-thresh">
-          <div id="desc1" class="my-desc wow fadeIn" data-wow-delay=".8s" data-wow-duration="1.2s">interaction designer + theatre artist</div>
+        <span id="my-name"  class="accent wow fadeIn" data-wow-delay=".2s" href="#about">echo</span>
+        <!-- <div id="intro-thresh"> -->
+          <!-- <div id="desc1" class="my-desc wow fadeIn" data-wow-delay=".8s" data-wow-duration="1.2s">interaction designer + theatre artist</div> -->
           <!-- <div class="my-desc wow fadeIn" data-wow-delay="1.4s" data-wow-duration="1.2s">I design moments on screens and in spaces.</div> -->
-        </div>
-      </div>
-      <div id="scroll-dwn" class="blendintro">
-        <a href="#about"><span id="arrow-down" class="glyphicon glyphicon-arrow-down wow fadeIn" data-wow-delay="1.4s" aria-hidden="true"></span></a>
-      </div>
+        <!-- </div> -->
+      <!-- </div> -->
     </section>
 
     <!-- my story -->
@@ -109,8 +106,6 @@
         <h1 class="center">
           my story
         </h1>
-
-        <div id="portrait-cont"><img id="portrait" src="assets/me.jpg"></img></div>
         <div id="story-text">
           <p>
             My work engages play, empathy, and analytics to devise solutions to wicked problems. I spend time with people, tools, and ideas until I know their truth. I use these discoveries to create human-centered services and environments, with an eye towards emerging technologies such as machine learning, VR &amp; AR, and ambient displays. My theatre arts and interaction design practices inform each other on a <a class="fancy" href="#crossover">daily basis</a>.
@@ -250,6 +245,8 @@
 
       <!-- plugins -->
       <script src="js/plugins/wow.min.js"></script>
+      <script src="http://www.w3schools.com/lib/w3data.js"></script>
+      <script>w3IncludeHTML();</script>
       
       <!-- my Javascript -->
       <script src="js/myscript.js"></script>
