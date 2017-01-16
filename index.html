@@ -31,11 +31,11 @@
   </head>
 
   <!-- sets up bootstrap scrollspy -->
-  <body data-spy="scroll" data-target=".navbar" data-offset="51">
+  <body data-spy="scroll" data-target=".navbar" data-offset="76"> <!-- 51 -->
 
     <!-- navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top navbar-hidden">
-      <div class="container-fluid">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-hidden"> <!-- navbar-hidden -->
+      <div id="navbar-content" class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" id="btn-collapse" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -44,7 +44,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a id="brand" class="navbar-brand fancy accent no-bord" href="#intro">
+          <a id="brand" class="navbar-brand fancy accent no-bord" href="#">
             michael james
           </a>
         </div>
@@ -87,7 +87,9 @@
       <div class="blendintro headersize">
         <svg id="headersvg" width='100%' height='100%' viewBox="0 0 100 100" preserveAspectRatio="none"> <!-- style='background-color: whitesmoke' -->
           <polygon width="100%" points="0,0 100,0 30,25 0,55" class="svgcolor"/>
+          <!-- <path d="M0,0H100S10,10,0,100Z" class="svgcolor"/> -->
           <polygon width="100%" points="100,100 0,100 75,70 100,45" class="svgcolor"/>
+          <!-- <path d="M100,100H100,0S90,90,100,0Z" class="svgcolor"/> -->
           <!-- <polygon points="750,750 750,0 0,0" style="fill:blue; mix-blend-mode: screen;"/> -->
         </svg>
       </div>
@@ -126,227 +128,78 @@
     <section id="work" class="bk-blue bk-box">
       <div class="container">
         <div class="work-cont row">
-          <div class="col-md-12 head center wow fadeIn blendintro" data-wow-delay=".4s">
-              <div class="head-pad matte-pink">work</div>
+          <div class="col-md-12 head center blend-work">
+              <div class="head-pad matte-white">work</div>
           </div>
         </div>
 
-        <!-- porfolio: interaction design -->
-          <div class="work-cont row">
-            <div class="work-item col-md-6">
-              <a href="echo.html">
-              <!-- <a data-toggle="modal" data-target="#modal" data-whatever="Echo"> -->
-                <div class="work-item-pad">
-                  <img src="assets/thumb/simon.jpg" data-wy="70" data-ny=""></img>
-                  <div class="work-item-overlay"></div>
+        <!-- porfolio: row 1 -->
+        <div class="work-cont row row-margin">
+          <div class="work-item col-md-6">
+            <a href="echo.html">
+            <!-- <a data-toggle="modal" data-target="#modal" data-whatever="Echo"> -->
+              <div class="work-item-pad">
+                <img src="assets/thumb/simon.jpg" data-wy="70" data-ny=""></img>
+                <div class="work-item-overlay"></div>
+              </div>
+              <!-- <div class="blendintro">  -->
+                <div class="info blend-work matte-white">
+                    <p class="title">Echo</p>
+                    <p class="desc">data teaches Engineers presentation skills</p>
+                    <p class="tags">service design, system modeling, prototyping/user enactments, interviews, needs validation</p>
                 </div>
-              </a>
-            </div>
-
-            <div class="work-item col-md-6">
-              <a href="solemates.html">
-              <!-- <a data-toggle="modal" data-target="#modal" data-whatever="Solemates"> -->
-                <div class="work-item-pad">
-                  <img src="assets/thumb/solemates.png" data-wy="65"></img>
-                  <div class="work-item-overlay"></div>
-                </div>
-              </a>
-            </div>
+              <!-- </div> -->
+            </a>
           </div>
 
-          <div class="work-cont row">
-            <div class="col-md-6 desc wow fadeIn blendintro">
-              <div class="desc-pad matte-pink">
-                Echo
-                <p>data teaches Engineers presentation skills</p>
+          <div class="work-item col-md-6">
+            <a href="solemates.html">
+            <!-- <a data-toggle="modal" data-target="#modal" data-whatever="Solemates"> -->
+              <div class="work-item-pad">
+                <img src="assets/thumb/solemates.png" data-wy="65"></img>
+                <div class="work-item-overlay"></div>
               </div>
-            </div>
-
-            <div class="col-md-6 desc wow fadeIn blendintro">
-              <div class="desc-pad matte-pink">
-                Solemates
-                <p>intelligent shoe store augments salespeople</p>
+              <div class="info blend-work matte-white">
+                <p class="title">Solemates</p>
+                <p class="desc">intelligent shoe store augments salespeople</p>
+                <p class="tags">intelligent environments, service design, observation, needs validation, animation</p>
               </div>
-            </div>
+            </a>
           </div>
-
-        <!-- porfolio: theatrical design -->
-          <div class="work-cont row">
-            <div class="work-item col-md-6">
-              <a href="smaug.html">
-              <!-- <a data-toggle="modal" data-target="#modal" data-whatever="Smaug's Table"> -->
-                <div class="work-item-pad">
-                  <img src="assets/thumb/smaug.jpg" data-wy="70"></img>
-                  <div class="work-item-overlay">
-                    <!-- <div class="work-item-label">
-                      Smaug's Table
-                      <p>themed restaurant</p>
-                    </div> -->
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="work-item col-md-6">
-              <a href="milk.html">
-              <!-- <a data-toggle="modal" data-target="#modal" data-whatever="Milke Like Sugar"> -->
-                <div class="work-item-pad">
-                  <img src="assets/thumb/milk.jpg" data-wy="20"></img>
-                  <div class="work-item-overlay">
-                    <!-- <div class="work-item-label">
-                      <i>Milk Like Sugar</i>
-                      <p>media design</p>
-                    </div> -->
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="work-cont row">
-              <div class="col-md-6 desc wow fadeIn blendintro">
-                <div class="desc-pad matte-pink">
-                  Smaug's Table
-                  <p>sneak into the Lonely Mountain for dinner</p>
-                </div>
-              </div>
-
-              <div class="col-md-6 desc wow fadeIn blendintro">
-                <div class="desc-pad matte-pink">
-                  <i>Milk Like Sugar</i>
-                  <p>performance exposes artifice force-fed to low-income girls</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- <div class="work-item col-md-3">
-              <a data-toggle="modal" data-target="#modal" data-whatever="Drama Queens">
-                <div class="work-item-pad">
-                  <img src="assets/thumb/queens.jpg" data-wy="53"></img>
-                  <div class="work-item-overlay">
-                    <div class="work-item-label">
-                      Drama Queens
-                      <p>event design &amp; management</p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="work-item col-md-3">
-              <a data-toggle="modal" data-target="#modal" data-whatever="Surrounded">
-                <div class="work-item-pad">
-                  <img src="assets/thumb/surround.jpg" data-wy="75"></img>
-                  <div class="work-item-overlay">
-                    <div class="work-item-label">
-                      <i>Surrounded</i>
-                      <p>scenography &amp; management</p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="work-item col-md-3">
-              <a data-toggle="modal" data-target="#modal" data-whatever="Surrounded 2.0">
-                <div class="work-item-pad">
-                  <img src="assets/thumb/surround2.jpg" data-wy="20"></img>
-                  <div class="work-item-overlay">
-                    <div class="work-item-label">
-                      <i>Surrounded 2.0</i>
-                      <p>scenography</p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div> -->
         </div>
 
-        <!-- porfolio: visual stories -->
-        <!-- <div id="visual" class="work wow fadeIn" data-wow-delay=".4s">
-          <h1 class="work-cat">
-            visual stories
-          </h1>
-          <div class="work-desc col-md-10 col-md-offset-1">
-            I enjoy "misusing" materials and forms to tell visual stories.
-          </div>
-          <div class="work-cont row">
-            <div class="work-item col-md-4">
-              <a data-toggle="modal" data-target="#modal" data-whatever="Phobias">
-                <div class="work-item-pad">
-                  <img src="assets/thumb/phobias.png" data-wy="-160" data-ny="-75"></img>
-                  <div class="work-item-overlay">
-                    <div class="work-item-label">
-                      Phobias
-                      <p>poster series</p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="work-item col-md-4">
-              <a data-toggle="modal" data-target="#modal" data-whatever="Diving Board">
-                <div class="work-item-pad">
-                  <img src="assets/thumb/diving.jpg" data-wy="20" data-ny="5"></img>
-                  <div class="work-item-overlay">
-                    <div class="work-item-label">
-                      Diving Board
-                      <p>visual book</p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="work-item col-md-4">
-              <a data-toggle="modal" data-target="#modal" data-whatever="Suburban Shenanigans">
-                <div class="work-item-pad">
-                  <img src="assets/thumb/unfold.jpg" data-wy="-30" data-nx="8"></img>
-                  <div class="work-item-overlay">
-                    <div class="work-item-label">
-                      Suburban Shenanigans
-                      <p>unfolding narrative</p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- porfolio: mediation -->
-        <!-- <div id="mediation" class="work wow fadeIn" data-wow-delay=".4s">
-          <h1 class="work-cat">
-            mediation
-          </h1>
-          <div class="work-desc col-md-10 col-md-offset-1">
-            I make things that change the way people interpret themselves and their surroundings.
-          </div>
-          <div class="work-cont row">
-            <div class="work-item col-md-6">
-              <a data-toggle="modal" data-target="#modal" data-whatever="Reflections">
-                <div class="work-item-pad">
-                  <img src="assets/thumb/reflections.jpg" data-wy="12"></img>
-                  <div class="work-item-overlay">
-                    <div class="work-item-label">
-                      Reflections
-                      <p>interactive art</p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="work-item col-md-6">
-              <a data-toggle="modal" data-target="#modal" data-whatever="Conversation Chain">
-                <div class="work-item-pad">
-                  <img src="assets/thumb/chain.jpg" data-wy="15"></img>
-                  <div class="work-item-overlay">
-                    <div class="work-item-label">
-                      Conversation Chain
-                      <p>discussion coach</p>
-                    </div>
-                  </div>
-                </div>
+        <!-- porfolio: row 2 -->
+        <div class="work-cont row row-margin">
+          <div class="work-item col-md-6">
+            <a href="smaug.html">
+            <!-- <a data-toggle="modal" data-target="#modal" data-whatever="Smaug's Table"> -->
+              <div class="work-item-pad">
+                <img src="assets/thumb/smaug.jpg" data-wy="70"></img>
+                <div class="work-item-overlay"></div>
               </div>
-            </a>  
+              <div class="info blend-work matte-white">
+                <p class="title">Smaug's Table</p>
+                <p class="desc">sneak into the Lonely Mountain for dinner</p>
+                <p class="tags">creative direction, location-based entertainment, sensors, creative coding</p>
+              </div>
+            </a>
           </div>
-        </div> -->
+
+          <div class="work-item col-md-6">
+            <a href="milk.html">
+            <!-- <a data-toggle="modal" data-target="#modal" data-whatever="Milke Like Sugar"> -->
+              <div class="work-item-pad">
+                <img src="assets/thumb/milk.jpg" data-wy="20"></img>
+                <div class="work-item-overlay"></div>
+              </div>
+              <div class="info blend-work matte-white">
+                <p class="title"><i>Milk Like Sugar</i></p>
+                <p class="desc">performance exposes artifice force-fed to low-income girls</p>
+                <p class="tags">theatre, mediated architecture, visual storytelling, TouchDesigner</p>
+              </div>
+            </a>
+          </div>
+        </div>
 
       </div>
     </section>
@@ -538,6 +391,7 @@
 
       <!-- plugins -->
       <script src="js/plugins/wow.min.js"></script>
+      <script src="js/plugins/jquery.fitvids.js"></script>
       
       <!-- my Javascript -->
       <script src="js/myscript.js"></script>

@@ -26,7 +26,7 @@ h1 {
 }
 
 section {
-    padding-top: 45px;
+    padding-top: 70px;
 }
 
 span.span-title {
@@ -34,8 +34,19 @@ span.span-title {
 	font-weight: 700;
 }
 
+.navbar {
+	min-height: 75px;
+}
+
 .navbar-hidden {
-	top: -53px;
+	/*top: -53px;*/
+	top: -78px;
+}
+
+#navbar-content {
+	/*top: 50%;*/
+	transform: translate(0, 25%);
+	/*position: absolute;*/
 }
 
 .navbar-default {
@@ -93,6 +104,14 @@ span.span-title {
 	font-weight: 700;
 }
 
+.dropdown-menu>li>a {
+	line-height: 2;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+	background-color: rgba(112, 89, 255, 0.4);
+}
+
 #brand {
 	color: rgba(255, 255, 255, 1);
 	font-size: 28pt;
@@ -133,7 +152,8 @@ header {
 }
 
 .svgcolor {
-	fill: rgb(55, 16, 93);
+	/*fill: rgb(55, 16, 93);*/
+	fill: rgb(68, 5, 130)
 	/*fill: pink;*/
 	/*fill: rgb(128, 100, 0);*/
 	/*fill: chocolate;*/
@@ -176,7 +196,7 @@ header {
 	/*margin: 15px;*/
 	font-size: 36pt;
 	font-weight: 700;
-	color: rgba( 0,0,0,0.85);
+	/*color: rgba( 0,0,0,0.85);*/
 	padding: 10px 15px 10px 15px;
 	margin-bottom: 10px;
 }
@@ -186,25 +206,14 @@ header {
 	height: 100%;
 }
 
-.desc {
+/*.desc {*/
 	/*padding: 10px;*/
 	/*margin: 15px;*/
-	font-size: 16pt;
+	/*font-size: 16pt;
 	font-weight: 700;
 	color: rgba( 0,0,0,0.85);
-	padding: 0px 15px 50px 15px;
-}
-
-.desc-pad {
-	width: 100%;
-	height: 100%;
-	padding: 10px;
-}
-
-.desc-pad p {
-	margin: 0;
-	font-weight: 400;
-}
+	padding: 0px 15px 50px 15px;*/
+/*}*/
 
 .matte-pink {
     background-color: rgba(255, 150, 251, 0.87);
@@ -214,12 +223,20 @@ header {
   	/*-webkit-background-clip: text;*/
 }
 
+.matte-white {
+	background-color: rgba(255, 255, 255, 0.75);
+}
+
 .screen {
 	mix-blend-mode: screen;
 }
 
 .blendintro {
 	mix-blend-mode: color-dodge;
+}
+
+.blend-work {
+	mix-blend-mode: hard-light;
 }
 
 #arrow-down {
@@ -262,9 +279,9 @@ header {
 	display: block;
     position: relative;
     width: 100%;
-    height: 26%;
+    height: auto;
     /*padding-top: 0;*/
-    min-height: 150px;
+    min-height: 26%;
 }
 
 .Subpage .intro-text {
@@ -275,6 +292,52 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 75%;
+}
+
+.Subpage .quote {
+	background-color: rgba(255, 150, 251, 0.87);
+	width: 100%;
+	padding: 25px;
+}
+
+.Subpage .quote div {
+	text-align: center;
+	font-size: 24pt;
+	color: white;
+	font-weight: 700;
+}
+
+.Subpage .heading {
+	display: inline-block;
+	background-color: yellow;
+	font-style: italic;
+	padding-top: 15px;
+	/*padding-bottom: 15px;*/
+	font-size: 24pt;
+	font-weight: 700;
+}
+
+.Subpage .emphasis {
+	font-weight: 700;
+}
+
+.Subpage .heading div {
+	margin-left: 82.5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	width: auto;
+}
+
+.Subpage .role {
+	/* add here */
+}
+
+.Subpage .role .heading {
+	font-style: italic;
+}
+
+.Subpage .role .title {
+	font-weight: 700;
 }
 
 a {
@@ -347,6 +410,10 @@ a.fancy:hover {
 	padding-bottom: 10px;
 }
 
+.blend {
+	mix-blend-mode: hard-light;
+}
+
 .work-cat {
 	text-align: center;
 }
@@ -362,20 +429,63 @@ a.fancy:hover {
 }
 
 .work-item {
-	height: 300px;
 	padding-top: 10px;
-	/*padding-bottom: 10px;*/
+	padding-bottom: 10px;
+}
+
+.work-item a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.work-item a:hover {
+	color: rgba(0, 0, 0, 1);
+}
+
+.work-item .info {
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+}
+
+.work-item .info p {
+	margin: 0;
+}
+
+.work-item .info .title {
+	font-size: 16pt;
+	font-weight: 700;
+}
+
+/*.work-item .info p a:hover {
+	border-bottom: 2px solid rgba(0, 0, 0, 0.85);
+}*/
+
+.work-item .info .desc {
+	font-weight: 400;
+}
+
+.work-item .info .tags {
+	font-size: 11pt;
+	opacity: 0.75;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.row-margin {
+	margin-bottom: 10px;
 }
 
 .work-item-pad {
 	width: 100%;
-	height: 100%;
+	/*height: 100%;*/
+	height: 300px;
 	background: no-repeat center center;
 	background-size: cover;
 	overflow: hidden;
 
-	-webkit-transition: background-size 400ms ease;
-  	transition: background-size 400ms ease;
+	/*-webkit-transition: background-size 400ms ease;*/
+  	/*transition: background-size 400ms ease;*/
   	background-size: 100%;
 }
 
@@ -388,15 +498,17 @@ a.fancy:hover {
 }
 
 .work-item-overlay {
-	-webkit-transition: opacity 600ms ease;
-	-moz-transition: opacity 600ms ease;
-	transition: opacity 600ms ease;
+	/*-webkit-transition: opacity 600ms ease;*/
+	/*-moz-transition: opacity 600ms ease;*/
+	/*transition: opacity 600ms ease;*/
 
 	background: background-color: rgba(0,0,0,0.5); /* For browsers that do not support gradients */
-	background: -webkit-radial-gradient(circle 50% 50%, transparent 20%, rgba(0,0,0,0.8)); /* Safari */
-	background: -o-radial-gradient(circle 50% 50%, transparent 20%, rgba(0,0,0,0.8)); /* Opera 11.6 to 12.0 */
-	background: -moz-radial-gradient(circle 50% 50%, transparent 20%, rgba(0,0,0,0.8)); /* Firefox 3.6 to 15 */
-	background: radial-gradient(circle at 50% 50%, transparent 20%, rgba(0,0,0,0.8)); /* Standard syntax */
+	background: -webkit-radial-gradient(circle 50% 50%, transparent 50%, rgba(0,0,0,0.8)); /* Safari */
+	background: -o-radial-gradient(circle 50% 50%, transparent 50%, rgba(0,0,0,0.8)); /* Opera 11.6 to 12.0 */
+	background: -moz-radial-gradient(circle 50% 50%, transparent 50%, rgba(0,0,0,0.8)); /* Firefox 3.6 to 15 */
+	background: radial-gradient(circle at 50% 50%, transparent 50%, rgba(0,0,0,0.8)); /* Standard syntax */
+
+	/*background: transparent;*/
 
 	position: absolute;
 	top: 0;
@@ -406,10 +518,11 @@ a.fancy:hover {
 	display: block;
 	z-index: 0;
 	opacity: 0;
+	/*transition: opacity 300ms linear;*/
 }
 
 .work-item-overlay:hover {
-	opacity: 1;
+	/*opacity: 1;*/
 }
 
 .work-item-label {

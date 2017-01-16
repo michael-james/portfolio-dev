@@ -66,6 +66,7 @@ $(window).load(function(){
   // ################################################
 
   var currentContRatio = 0;
+  var workFade = 300;
 
   // determine aspect ratio of container
   function setWorkRatio () {
@@ -94,7 +95,7 @@ $(window).load(function(){
     var imgHeight = $(img).height();  // Current image height
     var imgRatio = imgWidth / imgHeight; // Used for img aspect ratio
     var fade = 0;
-    if (anim) {fade = 400;}
+    if (anim) {fade = workFade;}
 
     // custom image offsets
     var x = 0,
@@ -160,11 +161,13 @@ $(window).load(function(){
   };
 
   // event listener for portfolio items, sets desired scale
-  $(".work-item-pad").hover(function() {
+  $(".work-item").hover(function() {
       //mouse in
+      $(this).find(".work-item-overlay").animate({opacity: 1}, workFade);
       sizeWork($(this).find("img"), 1.1, true);
     }, function() {
       //mouse out
+      $(this).find(".work-item-overlay").animate({opacity: 0}, workFade);
       sizeWork($(this).find("img"), 1, true);
   });
 
@@ -177,7 +180,21 @@ $(window).load(function(){
   $(window).ready(function() {
     setWorkRatio();
   })
+
+  headerMargin();
+
+  // fix video width
+  $(".movie").fitVids();
 });
+
+$( window ).resize(function() {
+  headerMargin();
+});
+
+function headerMargin() {
+  var marginLeft = $(".container").css("margin-left");
+  $(".Subpage .heading div").css("margin-left", marginLeft);
+};
 
 // ################################################
 // initialize WOW package for scroll animations
@@ -223,8 +240,8 @@ var cbpAnimatedHeader = (function() {
       header.classList.remove('navbar-hidden');
     }
     else {
-      // header.classList.add('navbar-hidden'); //just for now
-      // navCollapse.classList.remove('in'); //just for now
+      header.classList.add('navbar-hidden'); //just for now
+      navCollapse.classList.remove('in'); //just for now
     }
     didScroll = false;
   }
